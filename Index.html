@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotionMaya Web App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MotionMaya Web App</h1>
+
+    <div class="upload-section">
+      <label for="imageUpload">1. Upload Image</label>
+      <input type="file" id="imageUpload" accept="image/*" />
+    </div>
+
+    <div class="narration-section">
+      <label for="narration">2. Type Narration</label>
+      <textarea id="narration" placeholder="e.g., Maya is making flowers in the market..."></textarea>
+    </div>
+
+    <button id="generateBtn">Generate Video</button>
+
+    <div class="progress-section" style="display:none;">
+      <label>Generating Video...</label>
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressPercent">0%</span>
+    </div>
+
+    <div class="output-section" style="display:none;">
+      <h3>Generated Video:</h3>
+      <video id="outputVideo" width="480" controls></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
