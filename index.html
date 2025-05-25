@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MotionMaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MotionMaya</h1>
+        <input type="file" id="imageInput" accept="image/*"><br>
+        <input type="text" id="narrationInput" placeholder="Enter narration"><br>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="bn">Bengali</option>
+        </select><br>
+        <button onclick="generateVideo()">Generate Video</button>
+        <div id="status"></div>
+        <video id="outputVideo" controls style="display:none;"></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

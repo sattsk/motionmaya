@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+video {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
